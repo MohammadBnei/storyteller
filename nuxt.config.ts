@@ -1,5 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
-  devtools: { enabled: true }
+  pages: false, // Disable pages since we're using app.vue directly
+  devtools: { enabled: true },
+  modules: ['@nuxt/ui'],
+  ui: {
+    global: true,
+  },
+  typescript: {
+    strict: true
+  }
 })
